@@ -1,51 +1,50 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-  }
-  
-  nav.nav-bar {
+}
+
+nav.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: blue;
     padding: 1%;
-  }
-  
-  h2.logo {
+}
+
+h2.logo {
     font-size: x-large;
     color: white;
     font-family: ui-monospace;
-  }
-  
-  input.search-box {
+}
+
+input.search-box {
     padding: 10px;
-    color:white;
-    border: 2px solid white;
+    color:black;
+    border: 2px solid black;
     border-radius: 15px;
-    background-color: #00006e45;
-  }
-  
-  .main{
+    background-color: white;
+}
+
+.main{
     display: flex;
-  }
-  
-  .sidebar{
+}
+
+.sidebar{
     width: 15%;
     border: 2px solid red;
-  }
-  
-  .container {
+}
+
+.container {
     width: 85%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     /* justify-content: space-evenly; */
-  }
-  
-  .card {
+}
+
+.card {
     padding: 5px;
     border-radius: 10px;
     /* width: 20%;
@@ -53,62 +52,62 @@
     width: calc(25% - 20px);
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  }
-  
-  .card-img {
+}
+
+.card-img {
     width: 100%;
     border-radius: 10px;
-  }
-  
-  .mov-title{
+}
+
+.mov-title{
     font-size: 16px;
     font-weight: 700;
     color: black;
-  }
-  
-  .lan-rating {
+}
+
+.lan-rating {
     display: flex;
     justify-content: space-between;
     align-items:center; 
-  }
-  
-  .rating {
+}
+
+.rating {
    
     color: #333;
     padding: 0.25em;
     border-radius: 0.25em;
     text-align: center;
     display: inline-block;
-  }
-  
-  .orange{
+}
+
+.orange{
     background-color: #FFC107;
-  }
-  
-  .green{
+}
+
+.green{
     background-color: #4CC035;
-  }
-  .red{
+}
+.red{
     background-color: #E42535;
-  }
-  
-  /*---------- Side bar -------- */
-  
-  .category-container {
+}
+
+/*---------- Side bar -------- */
+
+.category-container {
     padding: 10px 0 0 10px;
     font-size: 16px;
-  }
-  .tag {
+}
+.tag {
     background: aquamarine;
     margin: 5px;
-  }
-  
-  .tag.highlighted{
+}
+
+.tag.highlighted{
     background-color: red;
   }
-  
+
   /* /modal css/ */
-  
+
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

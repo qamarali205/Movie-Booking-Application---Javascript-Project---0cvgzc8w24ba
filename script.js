@@ -159,7 +159,7 @@ form.addEventListener('submit', (e) => {
 // genre setting code
 
 setGenre();
-var selGenre=[];
+var selGenre;
 function setGenre(){
     tagEle.innerHTML="";
     genres.forEach(genre=>{
@@ -168,22 +168,25 @@ function setGenre(){
         t.id=genre.id;
         t.innerText=genre.name;
         t.addEventListener('click', ()=>{
-            if(selGenre.length==0){
-                selGenre.push(genre.id);
-            }else{
-                if(selGenre.includes(genre.id)){
-                    selGenre.forEach((id,idx)=>{
-                        if(id==genre.id){
-                            selGenre.splice(idx,1);
-                        }
+          //   if(selGenre.length==0){
+          //       selGenre.push(genre.id);
+          //   }else{
+          //       if(selGenre.includes(genre.id)){
+          //           selGenre.forEach((id,idx)=>{
+          //               if(id==genre.id){
+          //                   selGenre.splice(idx,1);
+          //               }
 
-                    })
-                }else{
-                    selGenre.push(genre.id);
-                }
-            }
-          console.log(selGenre)
-          getMovies(API_URL+'&with_genres='+encodeURI(selGenre.join(',')));
+          //           })
+          //       }else{
+          //           selGenre.push(genre.id);
+          //       }
+          //   }
+          // console.log(selGenre)
+
+          selGenre=genre.id;
+         // getMovies(API_URL+'&with_genres='+encodeURI(selGenre.join(',')));
+         getMovies(API_URL+'&with_genres='+encodeURI(selGenre));
           highlightGenre();
         })
         tagEle.append(t);
@@ -192,16 +195,18 @@ function setGenre(){
 
 //sectect genre 
 function highlightGenre(){
-    const tags=document.querySelectorAll('.tag');
-    tags.forEach(tag => {
-        tag.classList.remove('highlighted');
-    })
-    if(selGenre.lenght!=0){
-        selGenre.forEach(id =>{
-            const highlightedTag=document.getElementById(id);
-            highlightedTag.classList.add('highlighted');
-        })
-    }
+  const tags=document.querySelectorAll('.tag');
+  tags.forEach(tag => {
+      tag.classList.remove('highlighted');
+  })
+  // if(selGenre.lenght!=0){
+  //     selGenre.forEach(id =>{
+  //         const highlightedTag=document.getElementById(id);
+  //         highlightedTag.classList.add('highlighted');
+  //     })
+  // }
+     console.log(selGenre)
+        document.getElementById(selGenre).classList.add('highlighted');
 }
 
 // modal script

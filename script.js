@@ -230,7 +230,7 @@ function makeMove(url,id){
            document.querySelector("#booking").innerHTML = `
            <div id="ticket-container">
                     <p id="ticket-price"><span id="price">₹ &nbsp${price}</span></p>
-                    <button id="buy-button">Buy Ticket</button>
+                    <button id="buy-button"><span>Buy Ticket</span></button>
                 </div>
                 </div>`;
         //    document.getElementById('price').innerText=price;

@@ -217,6 +217,21 @@ input.search-box {
   }
 
   @media screen and (max-width:900px) {
+    .main{
+      display: block;
+
+    }
+    
+    .category-container{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+    }
+    .container{
+      width: 100%;
+    }
+    .card{
+      width: calc(31% - 10px);
+    }
     .movie-card{
       grid-template-columns: 35% 65%;
       align-items: center;
@@ -237,6 +252,10 @@ input.search-box {
     .sidebar{
       width: 25%;
     }
+    .category-container{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+    }
     .card{
       width: calc(45% - 10px);
     }
@@ -250,7 +269,7 @@ input.search-box {
       height: 25vh;
     }
     .movie-card{
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       align-items: center;
       gap: 1rem;
       justify-content: space-between;
@@ -276,7 +295,7 @@ input.search-box {
       width: 40%;      
   }
   .card{
-    width: 84%;
+    width: 45%;
   }
   .movie-details{
     padding-left: 5px;

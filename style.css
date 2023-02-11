@@ -269,7 +269,7 @@ input.search-box {
       height: 25vh;
     }
     .movie-card{
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       align-items: center;
       gap: 1rem;
       justify-content: space-between;
@@ -296,6 +296,9 @@ input.search-box {
   }
   .card{
     width: 45%;
+  }
+  .movie-card{
+    grid-template-columns: 1fr;
   }
   .movie-details{
     padding-left: 5px;

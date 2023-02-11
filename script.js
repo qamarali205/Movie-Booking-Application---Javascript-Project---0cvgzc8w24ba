@@ -92,6 +92,7 @@ const genres=[
   ];
 
 let result;
+
 getMovies(API_URL)
 function getMovies(url){
     fetch(url)

@@ -227,7 +227,7 @@ function makeMove(url,id){
            document.getElementById('language').innerText=item.original_language;
            
            document.getElementById('description').innerText=item.overview;
-           let price = Math.floor((Math.random()*300)+250);
+           let price = Math.floor(Math.random() * (300 - 250+1) + 250);
            document.querySelector("#booking").innerHTML = `
            <div id="ticket-container">
                     <p id="ticket-price"><span id="price">₹ &nbsp${price}</span></p>

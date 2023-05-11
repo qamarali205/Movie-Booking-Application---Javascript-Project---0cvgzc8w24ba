@@ -40,8 +40,7 @@ input.search-box {
 }
 
 .sidebar{
-    width: 15%;
-    /* border: 2px solid red; */
+    width: 15%;      
 }
 
 .container {
@@ -108,6 +107,7 @@ input.search-box {
 .tag {
     background: aquamarine;
     margin: 5px;
+    padding: 8px;
 }
 
 .tag.highlighted{

@@ -38,20 +38,20 @@
             </div>
         </div>
         <div class="paymentMethod">
-            <form action="index.html" onsubmit="alert('Booking Movies Ticket');">
+            <form action="index.html" onsubmit="alert('Booking Movies Ticket');" id="submitpayout">
                 <h3>Payment Info</h3>
                 <div id="inputItem">
                     <div id="item">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" placeholder="first name" required>
+                        <input type="text" id="fname" name="fname" placeholder="first name" required>
                     </div>
                     <div id="item">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" placeholder="last name" required>
+                        <input type="text" id="lname" name="lname" placeholder="last name" required>
                     </div>
                     <div id="item">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="you@Example.com" required>
+                        <input type="email" id="email" name="email" placeholder="you@Example.com" required>
                     </div>
                 </div>
                 Card Type
@@ -97,6 +97,7 @@
                 <button class="submit" id="sumbit">Proceed To Pay</button>
             </form>
         </div>
+        <div id="show-detail"></div>
     </main>
 </body>
 </html>

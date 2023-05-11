@@ -56,3 +56,21 @@ function displayPaymentMethod(){
 
 
 }
+
+// const form=document.getElementById('submitpayout');
+// const detail=document.getElementById('show-detail');
+// form.addEventListener("submit", (e)=>{
+//     e.preventDefault();
+    
+
+
+
+// const fname=form.elements["fname"].value;
+// const lname=form.elements['lname'].value;
+// const email=form.elements['email'].value;
+
+// //alert(fname);
+// detail.innerHTML=`
+// <p>Full Name: ${fname} ${lname}</p>
+// <p>Email: ${email}</p>`
+// })
